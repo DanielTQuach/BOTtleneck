@@ -1,6 +1,6 @@
 name: "BOTtleneck"
 description: "AI-powered performance review bot that detects bottlenecks and anti-patterns in PRs using Claude"
-author: "danieltquach"
+author: "DanielTQuach"
 
 branding:
   icon: "zap"
