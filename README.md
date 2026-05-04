@@ -36,7 +36,7 @@ jobs:
 
     steps:
       - name: BOTtleneck
-        uses: jjjosephn/bottleneck@v1
+        uses: DanielTQuach/BOTtleneck@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
