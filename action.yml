@@ -1,0 +1,24 @@
+name: "BOTtleneck"
+description: "AI-powered performance review bot that detects bottlenecks and anti-patterns in PRs using Claude"
+author: "jjjosephn"
+
+branding:
+  icon: "zap"
+  color: "yellow"
+
+inputs:
+  anthropic_api_key:
+    description: "Anthropic API key for Claude access"
+    required: true
+  github_token:
+    description: "GitHub token for posting PR comments"
+    required: true
+    default: ${{ github.token }}
+  max_files:
+    description: "Maximum number of files to review per PR (default: 10)"
+    required: false
+    default: "10"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
